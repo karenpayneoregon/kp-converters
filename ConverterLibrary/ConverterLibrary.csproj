@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <LangVersion>9.0</LangVersion>
+	  <TargetFramework>net5.0</TargetFramework>
+	  <PackageId>KP.ConverterLibrary</PackageId>
+	  <Product>KP.ConverterLibrary</Product>
+	  <Description>Provides useful language extension methods for numeric types using .NET Core 5, C#. Originally created for teaching company developers unit teting.</Description>
+	  <Copyright>MIT</Copyright>
+	  <PackageLicenseExpression>MT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+
+</Project>
