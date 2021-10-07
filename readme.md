@@ -6,6 +6,8 @@ Many extension libraries have various types e.g. string, date, numeric etc which
 
 With that, check out the [following package](https://www.nuget.org/packages/KP.StringLanguageExtensions/) for extension extensions.
 
+This repository has been setup as a template for students to easily fork this repository.
+
 Numeric language extensions.
 
 ### Int
