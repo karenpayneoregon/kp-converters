@@ -7,12 +7,14 @@
 	  <Product>KP.ConverterLibrary</Product>
 	  <Description>Provides useful language extension methods for numeric types using .NET Core 5, C#. Originally created for teaching company developers unit teting.</Description>
 	  <Copyright>MIT</Copyright>
-	  <PackageLicenseExpression>MT</PackageLicenseExpression>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageIcon>converterNuGet.png</PackageIcon>
 	  <PackageIconUrl />
 	  <PackageProjectUrl>https://github.com/karenpayneoregon/kp-converters</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/karenpayneoregon/kp-converters</RepositoryUrl>
-	  <PackageTags>csharp netcore5</PackageTags>
+	  <PackageTags>C# csharp netcore5</PackageTags>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
