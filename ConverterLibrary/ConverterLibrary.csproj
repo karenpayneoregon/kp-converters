@@ -8,10 +8,22 @@
 	  <Description>Provides useful language extension methods for numeric types using .NET Core 5, C#. Originally created for teaching company developers unit teting.</Description>
 	  <Copyright>MIT</Copyright>
 	  <PackageLicenseExpression>MT</PackageLicenseExpression>
+	  <PackageIcon>converterNuGet.png</PackageIcon>
+	  <PackageIconUrl />
+	  <PackageProjectUrl>https://github.com/karenpayneoregon/kp-converters</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/karenpayneoregon/kp-converters</RepositoryUrl>
+	  <PackageTags>csharp netcore5</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Classes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\converterNuGet.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -38,6 +38,25 @@ namespace CoreUnitTestProject
 
         }
 
+        /// <summary>
+        /// This is truly a fringe case method
+        /// Now we can also wrap <see cref="NumericArrays.ToIntegerPreserveArray"/> which
+        /// unless the rule there can no no zeros this can make sense while
+        /// <see cref="NumericArrays.AsIntegerArray"/> makes more sense
+        /// </summary>
+        [TestMethod]
+        [TestTraits(Trait.IntArray)]
+        public void NoZeroTest()
+        {
+            string[] values = { "1", "2", "3"  };
+
+            Assert.IsTrue(values.NoZeros());
+
+            values[1] = "A";
+            Assert.IsTrue(values.NoZeros());
+            
+        }
+        
         [TestMethod]
         [TestTraits(Trait.IntArray)]
         public void IntArrayAverage()

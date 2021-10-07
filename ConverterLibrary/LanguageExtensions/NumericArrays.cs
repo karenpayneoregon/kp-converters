@@ -22,6 +22,23 @@ namespace ConverterLibrary.LanguageExtensions
             => sender.SelectMany(item => item.ToCharArray()).All(char.IsNumber);
 
         /// <summary>
+        /// Determine if all values are non-zero
+        /// </summary>
+        /// <param name="sender">string array of values</param>
+        /// <returns></returns>
+        public static bool NoZeros(this string[] sender) 
+            => sender.AsIntegerArray().All(value => value != 0);
+
+        /// <summary>
+        /// Given a string array, convert to a int array.
+        /// If a element can not be converted the default value is 0.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <returns></returns>
+        public static int[] AsIntegerArray(this string[] sender) 
+            => sender.ToIntegerArray();
+
+        /// <summary>
         /// Convert values in array to int array discards non int values in array.
         /// </summary>
         /// <param name="sender">string array</param>
