@@ -52,10 +52,12 @@ namespace CoreUnitTestProject
 
             List<int> intItems = Enumerable.Range(1, 15).ToList();
             IEnumerable<IEnumerable<int>> intResults = intItems.Chunk(5);
+            Assert.AreEqual(intResults.Count(), 3);
+
 
             string[] stringItems = { "Mary", "Joe", "Ken", "Annie", "Bob", "Karen", "Mark", "Bick", "Lisa", "Bill" };
             IEnumerable<IEnumerable<string>> stringResults = stringItems.Chunk(5);
-            Console.WriteLine();
+            Assert.AreEqual(stringResults.Count(), 2);
         }
 
     }
