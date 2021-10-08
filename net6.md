@@ -1,4 +1,4 @@
-Exerimenting with generating `QR Codes`.
+
 
 </br>
 
