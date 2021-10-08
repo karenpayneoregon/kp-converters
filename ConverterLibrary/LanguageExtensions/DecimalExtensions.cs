@@ -25,6 +25,11 @@ namespace ConverterLibrary.LanguageExtensions
         public static int GetMajor(this decimal sender)
             => (int)sender;
 
+        /// <summary>
+        /// Count decimal places in a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <returns></returns>
         public static decimal CountDecimalPlaces(this decimal sender)
         {
 
@@ -44,6 +49,11 @@ namespace ConverterLibrary.LanguageExtensions
             return result;
         }
 
+        /// <summary>
+        /// Not used
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <returns></returns>
         private static string Fixer(this decimal sender) => sender % 1 == 0 ? $"{sender:C0}" : $"{sender:C2}";
 
         /// <summary>

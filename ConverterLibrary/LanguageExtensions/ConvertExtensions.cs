@@ -10,7 +10,7 @@ namespace ConverterLibrary.LanguageExtensions
         #region generic list converter
 
         public static IEnumerable<T> ConvertTo<T>(this IEnumerable items)
-            => items.Cast<object>().Select(x => (T)Convert.ChangeType(x, typeof(T)));
+            => items.Cast<object>().Select(item => (T)Convert.ChangeType(item, typeof(T)));
 
         public static List<T> ConvertToList<T>(this IEnumerable items)
             => items.ConvertTo<T>().ToList();
