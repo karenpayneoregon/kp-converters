@@ -12,6 +12,11 @@ namespace ConverterLibrary.LanguageExtensions
     /// </summary>
     public static class NumericArrays
     {
+        public static T[] GenericConvert<T>(this T?[] array) //where T : struct
+        {
+            return Array.ConvertAll(array, t => t ?? default(T));
+        }
+
         #region int convert methods
         /// <summary>
         /// Determine if all values can represent an int

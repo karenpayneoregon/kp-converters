@@ -47,6 +47,7 @@ namespace ConverterLibrary.LanguageExtensions
         /// <returns>Yes or No as a string</returns>
         public static string ToYesNoFormat(this int sender) => Convert.ToBoolean(sender) ? "Yes" : "No";
 
+
         /// <summary>
         /// Formats an int as Yes/No
         /// </summary>
