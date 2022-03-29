@@ -1,4 +1,4 @@
-# About
+# Common extension methods
 
 Useful numeric extensions created for teaching C# yet has many extensions that has real world application.
 
